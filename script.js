@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'sampleDB'
+    database: 'mokymai'
 });
 
 connection.connect(function (error) {
@@ -18,7 +18,7 @@ connection.connect(function (error) {
 });
 
 app.get('/', function (req, resp) {
-    connection.query("SELECT * FROM mySampleTable", function(error, rows, field) {
+    connection.query("SELECT * FROM baras1", function(error, rows, field) {
         if(!!error) {
             console.log('Error in the query');
         }else {
